@@ -16,8 +16,8 @@ The parser gets the data about cryptocurrencies from three markets - Binance, Ku
    pip install httpx colorama pydantic
    ```
 ## Usage
-1. Open the `settings.py` file and set the cryptocurrencies symbols you would like to check in the `CHECK_CRYPTO` property. Please write the **full symbol** seperated by backslash (/), like BTC/USDT or ETH/USDT. Even if you want to check only BTC, without specific additional currency, you must write a full symbol because of each market differently accepts crypto-symbols.
-2. Run the application using `python -m app.main`. After each 60 seconds, there will be printed the follow information in the terminal:
+1. Open the `settings.py` file and set the cryptocurrencies symbols you would like to check in the `CHECK_CRYPTO` property. Please write the **full symbol** seperated by backslash (/), like BTC/USDT or ETH/USDT, and seperate these pairs by comma if you want to add more. Even if you want to check only BTC, without specific additional currency, you must write a full symbol because of each market differently accepts crypto-symbols.
+2. Run the application using `python -m app.main`. After each 60 seconds, there will be printed the following information in the terminal:
    - The market it's required to buy on (green color)
    - The market it's required to sell on (red color)
    - The difference between buying and selling as a sum and a percent. (also green)
